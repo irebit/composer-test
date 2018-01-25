@@ -1,0 +1,24 @@
+{
+    "name": "irebit/composer-test",
+    "description": "测试如何发布composer包",
+    "type": "metapackage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "afternoon",
+            "email": "afternoon@irebit.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+		"php": ">=5.3.0"
+	},
+	"autoload": {
+        "psr-4": {
+            "Ford\\Escape\\": "src/Ford/Escape",
+            "Ford\\Fusion\\": "src/Ford/Fusion",
+            "Ford\\Focus\\": "src/Ford/Focus",
+            "Ford\\Fiesta\\": "src/Ford/Fiesta"
+        }
+    }
+}
